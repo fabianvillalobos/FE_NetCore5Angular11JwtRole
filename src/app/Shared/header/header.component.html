@@ -10,7 +10,7 @@
                 <a class="nav-link" routerLink="/register" *ngIf="!isUserLogin">Register</a>
                 <a class="nav-link" [class.disabled]="isUser" routerLink="/allUserManagement" *ngIf="isUserLogin && !isUser">All Users</a>
                 <a class="nav-link" routerLink="/userManagement" *ngIf="isUserLogin">Users</a>
-                <a class="nav-link" routerLink="/login" (click)="onLogout()" *ngIf="isUserLogin">Logout</a>
+                <a class="nav-link" routerLink="/login" (click)="onLogout()" *ngIf="isUserLogin">Logout </a>
             </div>
         </div>
     </div>
