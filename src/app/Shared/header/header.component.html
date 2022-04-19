@@ -6,11 +6,11 @@
       </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" routerLink="/login" *ngIf="!isUserLogin">Login</a>
-                <a class="nav-link" routerLink="/register" *ngIf="!isUserLogin">Register</a>
+                <a class="nav-link active" aria-current="page" routerLink="/login" *ngIf="!isUserLogin">Ingresar</a>
+                <a class="nav-link" routerLink="/register" *ngIf="!isUserLogin">Registrar</a>
                 <a class="nav-link" [class.disabled]="isUser" routerLink="/allUserManagement" *ngIf="isUserLogin && !isUser">All Users</a>
                 <a class="nav-link" routerLink="/userManagement" *ngIf="isUserLogin">Users</a>
-                <a class="nav-link" routerLink="/login" (click)="onLogout()" *ngIf="isUserLogin">Logout </a>
+                <a class="nav-link" routerLink="/login" (click)="onLogout()" *ngIf="isUserLogin">Salir</a>
             </div>
         </div>
     </div>
